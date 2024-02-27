@@ -12,6 +12,7 @@ try:
 except:
     import os
     os.system('pip install torch')
+    import torch
 from torch.utils.cpp_extension import CUDA_HOME, CppExtension, CUDAExtension
 
 torch_ver = [int(x) for x in torch.__version__.split(".")[:2]]
